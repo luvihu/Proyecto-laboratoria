@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title></title>
+  </head>
+  <body>
+    <section class="hito1">
+      <div class="content">
+        <form class="form" action="">
+          <h2>¿Cuantas patas tiene una araña?</h2>
+          <label> <input type="radio" name="display" id="one" />6 patas </label>
+          <label>
+            <input type="radio" name="display" id="two" />12 patas
+          </label>
+          <label>
+            <input type="radio" name="display" id="three" />8 patas
+          </label>
+          <br />
+          <button id="answer1" type="button" class="ask">Respuesta</button>
+          <h2>¿Cuánto mide un caballo adulto de largo?</h2>
+          <label>
+            <input type="radio" name="display" id="four" />4 metros
+          </label>
+          <label>
+            <input type="radio" name="display" id="five" />2.4 metros
+          </label>
+          <label>
+            <input type="radio" name="display" id="six" />3.5 metros
+          </label>
+          <br />
+          <button type="button" class="ask">Respuesta</button>
+        </form>
+      </div>
+    </section>
+    <script>
+      const $inputOne = document.getElementById("one");
+
+      $inputOne.onclick = respuestaOne;
+
+      function respuestaOne() {
+        alert("6 patas");
+      }
+
+      const $inputTwo = document.getElementById("two");
+
+      $inputTwo.onclick = respuestaTwo;
+
+      function respuestaTwo() {
+        alert("12 patas");
+      }
+
+      const $inputThree = document.getElementById("three");
+
+      $inputThree.onclick = respuestaThree;
+
+      function respuestaThree() {
+        alert("8 patas");
+      }
+
+      const $inputFour = document.getElementById("four");
+
+      $inputFour.onclick = respuestaFour;
+
+      function respuestaFour() {
+        alert("4 metros");
+      }
+
+      const $inputFive = document.getElementById("five");
+
+      $inputFive.onclick = respuestaFive;
+
+      function respuestaFive() {
+        alert("2.4 metros");
+      }
+
+      const $inputSix = document.getElementById("six");
+
+      $inputSix.onclick = respuestaSix;
+
+      function respuestaSix() {
+        alert("3.5 metros");
+      }
+    </script>
+  </body>
+</html>

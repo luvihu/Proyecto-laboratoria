@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inline-size: 100vw;
+  block-size: 100vh;
+}
+
+label {
+  display: block;
+  border-radius: 7px;
+  border: 1px dashed #ccc;
+  margin-bottom: 8px;
+  padding: 5px;
+}
+
+.ask {
+  border-radius: 10px;
+  padding: 5px;
+  inline-size: 140px;
+  background-color: #76d7c8;
+  border: none;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.ask:hover {
+  cursor: pointer;
+}
+
+.ask:active {
+  transform: scale(0.95);
+}
