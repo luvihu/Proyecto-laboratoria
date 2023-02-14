@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title></title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <h3><a href="index.html">Micro-proyecto A</a></h3>
+      <h3><a href="micro-proyectoB.html">Micro-proyecto B</a></h3>
+      <h3><a href="micro-proyectoC.html">Micro-proyecto C</a></h3>
+    </div>
+    <section class="hito1">
+      <div class="content">
+        <form class="form" action="">
+          <h2>¿Cuantas patas tiene una araña?</h2>
+          <label> <input type="radio" name="display" id="one" />6 patas </label>
+          <label>
+            <input type="radio" name="display" id="two" />12 patas
+          </label>
+          <label>
+            <input type="radio" name="display" id="three" />8 patas
+          </label>
+          <br />
+          <button id="answer1" type="button" class="ask">Respuesta</button>
+          <h2>¿Qué pájaro es el único que puede volar hacia atrás?</h2>
+          <label>
+            <input type="radio" name="display" id="four" />Golondrina
+          </label>
+          <label>
+            <input type="radio" name="display" id="five" />Colibrí
+          </label>
+          <label> <input type="radio" name="display" id="six" />Loro </label>
+          <br />
+          <button id="answer2" class="ask">Respuesta</button>
+        </form>
+      </div>
+    </section>
+    <script>
+      const $answerOne = document.getElementById("answer1");
+
+      function respuestaOne() {
+        alert("6 patas");
+      }
+      $answerOne.addEventListener("click", respuestaOne);
+      $answerOne.addEventListener("click", (e) => {
+        alert("Respuesta incorrecta, la araña tiene 8 patas");
+        console.log(e.target);
+      });
+
+      const $answerTwo = document.getElementById("answer1");
+
+      function respuestaTwo() {
+        alert("12 patas");
+      }
+      $answerTwo.addEventListener("click", respuestaTwo);
+      $answerTwo.addEventListener("click", (e) => {
+        alert("Respuesta incorrecta, la araña tiene 8 patas");
+        console.log(e);
+      });
+
+      const $answerThree = document.getElementById("answer1");
+
+      function respuestaThree() {
+        alert("8 patas");
+      }
+      $answerThree.addEventListener("click", respuestaThree);
+      $answerThree.addEventListener("click", (e) => {
+        alert("Respuesta correcta!!");
+        console.log(e);
+      });
+
+      const $answerFour = document.getElementById("answer2");
+
+      function respuestaFour() {
+        alert("Golondrina");
+      }
+      $answerFour.addEventListener("click", respuestaFour);
+      $answerFour.addEventListener("click", (e) => {
+        alert(
+          "Respuesta incorrecta, el Colibrí es el único pájaro que puede volar hacia atrás"
+        );
+        console.log(e);
+      });
+
+      const $answerFive = document.getElementById("answer2");
+
+      function respuestaFive() {
+        alert("Colibrí");
+      }
+      $answerFive.addEventListener("click", respuestaFive);
+      $answerFive.addEventListener("click", (e) => {
+        alert("Respuesta Correcta!!");
+        console.log(e);
+      });
+
+      const $answerSix = document.getElementById("answer2");
+
+      function respuestaSix() {
+        alert("Loro");
+      }
+      $answerSix.addEventListener("click", respuestaSix);
+      $answerSix.addEventListener("click", (e) => {
+        alert(
+          "Respuesta incorrecta, el Colibrí es el único pájaro que puede volar hacia atrás"
+        );
+        console.log(e);
+      });
+    </script>
+  </body>
+</html>

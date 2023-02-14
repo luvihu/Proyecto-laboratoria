@@ -35,17 +35,58 @@
           </label>
           <label> <input type="radio" name="display" id="six" />Loro </label>
           <br />
-          <button id="answer2" type="button" class="ask">Respuesta</button>
+          <button type="button" class="ask">Respuesta</button>
         </form>
       </div>
     </section>
     <script>
-      const $answerOne = document.getElementById("answer1");
-      $answerOne.addEventListener("click", function (e) {
-        const $input = document.getElementById("one");
+      const $inputOne = document.getElementById("one");
 
-        one.style.backgroundColor = "lightyellow";
-      });
+      $inputOne.onclick = respuestaOne;
+
+      function respuestaOne() {
+        alert("6 patas");
+      }
+
+      const $inputTwo = document.getElementById("two");
+
+      $inputTwo.onclick = respuestaTwo;
+
+      function respuestaTwo() {
+        alert("12 patas");
+      }
+
+      const $inputThree = document.getElementById("three");
+
+      $inputThree.onclick = respuestaThree;
+
+      function respuestaThree() {
+        alert("8 patas");
+      }
+
+      const $inputFour = document.getElementById("four");
+
+      $inputFour.onclick = respuestaFour;
+
+      function respuestaFour() {
+        alert("Golondrina");
+      }
+
+      const $inputFive = document.getElementById("five");
+
+      $inputFive.onclick = respuestaFive;
+
+      function respuestaFive() {
+        alert("Colibrí");
+      }
+
+      const $inputSix = document.getElementById("six");
+
+      $inputSix.onclick = respuestaSix;
+
+      function respuestaSix() {
+        alert("Loro");
+      }
     </script>
   </body>
 </html>
