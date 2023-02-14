@@ -8,11 +8,6 @@
     <title></title>
   </head>
   <body>
-    <div class="sidebar">
-      <h3><a href="index.html">Micro-proyecto A</a></h3>
-      <h3><a href="micro-proyectoB.html">Micro-proyecto B</a></h3>
-      <h3><a href="micro-proyectoC.html">Micro-proyecto C</a></h3>
-    </div>
     <section class="hito1">
       <div class="content">
         <form class="form" action="">
@@ -40,11 +35,38 @@
       </div>
     </section>
     <script>
-      const $answerOne = document.getElementById("answer1");
-      $answerOne.addEventListener("click", function (e) {
-        const $input = document.getElementById("one");
+      const $answerOne = document.getElementById("answer1"),
+        $inputOne = document.getElementById("one"),
+        $inputTwo = document.getElementById("two"),
+        $inputThree = document.getElementById("three");
 
-        one.style.backgroundColor = "lightyellow";
+      $answerOne.addEventListener("click", function onclick(event) {
+        if ($inputThree.checked) {
+          alert(" Marcaste 8 patas, respuesta Correcta!!!");
+        } else if ($inputTwo.checked) {
+          alert(" Marcaste 12 patas, respuesta Incorrecta!!!");
+        } else if ($inputOne.checked) {
+          alert(" Marcaste 6 patas, respuesta Incorrecta!!!");
+        } else {
+          alert(" Por favor, selecciona una respuesta");
+        }
+      });
+
+      const $answerTwo = document.getElementById("answer2"),
+        $inputFour = document.getElementById("four"),
+        $inputFive = document.getElementById("five"),
+        $inputSix = document.getElementById("six");
+
+      $answerTwo.addEventListener("click", function onclick(event) {
+        if ($inputFive.checked) {
+          alert(" Marcaste Colibrí, respuesta Correcta!!!");
+        } else if ($inputFour.checked) {
+          alert(" Marcaste Golondrina, respuesta Incorrecta!!!");
+        } else if ($inputSix.checked) {
+          alert(" Marcaste Loro, respuesta Incorrecta!!!");
+        } else {
+          alert("Selecciona una respuesta");
+        }
       });
     </script>
   </body>
